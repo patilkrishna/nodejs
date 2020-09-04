@@ -1,0 +1,31 @@
+<div class="container-fluid" >
+  <div class="row" style="justify-content: center; display: flex; align-items: center;">
+    <ng-container *ngFor="let item of list">
+
+      <div class="col-8 my-4" style="font-family: fantasy; background-image: linear-gradient(rgb(20, 224, 13),rgb(18,44,56)) ; padding: 20px; border: 5px solid; height: 350px; color: black; text-decoration-color: brown;">
+        <h5>{{ item.title }}</h5>
+        <div style="align-items: center; justify-content: center; text-align: center;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempore
+          neque dolore excepturi. Illo quisquam itaque possimus, veniam sunt,
+          perferendis necessitatibus ut, in temporibus veritatis dolorum quidem
+          nesciunt eos corporis amet dignissimos maxime accusamus assumenda?
+          Architecto harum voluptates, asperiores dolorem vel consequatur ipsum?
+          Quas inventore architecto vitae laudantium maiores officiis doloribus
+          esse harum, repellendus dolor vero. Ab quaerat, sunt error consectetur
+          optio soluta aspernatur? Ducimus inventore est quod sequi molestiae.
+          Amet temporibus omnis
+        </div>
+        <button
+          class="btn btn-outline-secondary"
+          (click)="showDetailsModal(item)"
+        >
+          Show Details
+        </button>
+        <button (click)="increment()" class="btn btn-danger" style="align-items: flex-end; justify-content: space-between; margin: 30px;">like</button>
+        <button (click)="decrement()" class="btn btn-warning"
+          style="align-items: flex-end; justify-content: space-between; margin: 30px;">dislike</button>
+          {{counter}}
+        </div>
+    </ng-container>
+  </div>
+</div>
